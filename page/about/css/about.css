@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.entire::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #181818;
+  color: white;
+}
+
+body .entire {
+  width: calc(100vh - 0px);
+  height: calc(100vw - 0px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-transform: rotate(-90deg) translate(-100%, 0%);
+          transform: rotate(-90deg) translate(-100%, 0%);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -ms-scroll-snap-type: x;
+      scroll-snap-type: x;
+}
+
+body .entire .page {
+  position: relative;
+  scroll-snap-align: start;
+  border: solid #181818 10px;
+  width: calc(100vw);
+  height: calc(100vh);
+  -webkit-transform: rotate(90deg) translate(100%, calc(-100% + 100vw - 40px));
+          transform: rotate(90deg) translate(100%, calc(-100% + 100vw - 40px));
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  margin: 0 0 calc(-100% + 100vw - 0px) 0;
+}
+
+body .entire :nth-child(1) {
+  position: relative;
+}
+
+body .entire :nth-child(1) h1 {
+  font-size: calc(8vw + 50px);
+  white-space: nowrap;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  text-align: center;
+  left: 50%;
+  top: 43%;
+  font-weight: 500;
+}
+
+body .entire :nth-child(1) img {
+  width: calc(1.2vw + 15px);
+  height: initial;
+  position: absolute;
+  left: 50%;
+  top: 89%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body .entire :nth-child(1n+2) .myCard {
+  margin: 0 0 0 0;
+  width: 70vw;
+  height: 50vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+body .entire :nth-child(1n+2) .myCard img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  top: 50%;
+  left: 20%;
+  width: calc(10vw + 10vh + 100px);
+  height: calc(10vw + 10vh + 100px);
+  border-radius: 20px;
+  -webkit-filter: drop-shadow(5px 5px 3px #000000);
+          filter: drop-shadow(5px 5px 3px #000000);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body .entire :nth-child(1n+2) .myCard img:hover {
+  -webkit-filter: drop-shadow(15px 15px 10px #000000);
+          filter: drop-shadow(15px 15px 10px #000000);
+}
+
+body .entire :nth-child(1n+2) .myCard p {
+  width: 60%;
+  font-size: 150%;
+  position: absolute;
+  line-height: 60px;
+  right: 0%;
+  top: 10%;
+  font-weight: 300;
+}
+/*# sourceMappingURL=about.css.map */
