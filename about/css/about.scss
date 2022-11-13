@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.entire::-webkit-scrollbar {
+    display: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #181818;
+    color: white;
+    .entire {
+        width: calc(100vh - 0px);
+        height: calc(100vw - 0px);
+        overflow-y: auto;
+        overflow-x: hidden;
+        transform: rotate(-90deg) translate(-100%, 0%);
+        transform-origin: left top;
+        scroll-snap-type: x;
+        .page {
+            position: relative;
+            scroll-snap-align: start;
+            border: solid #181818 10px;
+            width: calc(100vw);
+            height: calc(100vh);
+            transform: rotate(90deg) translate(100%, calc(-100% + 100vw - 40px));
+            transform-origin: right top;
+            margin: 0 0 calc(-100% + 100vw - 0px) 0;
+          }
+        :nth-child(1){
+            position: relative;
+            h1{
+                font-size: calc(8vw + 50px);
+                white-space: nowrap;
+                transform: translate(-50%, -50%);
+                transform-origin: left top;
+                text-align: center;
+                left: 50%;
+                top: 43%;
+                font-weight: 500;
+            }
+            img{
+                width: calc(1.2vw + 15px);
+                height: initial;
+                position: absolute;
+                left: 50%;
+                top: 89%;
+                transform: translate(-50%, -50%);
+            }
+          }
+          :nth-child(1n+2){
+            .myCard{
+                margin: 0 0 0 0;
+                width: 70vw;
+                height: 50vh;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 50%;
+                //background-color: aqua;
+                img{
+                    display: flex;
+                    position: absolute;
+                    transform-origin: left top;
+                    top: 50%;
+                    left: 20%;
+                    width: calc(10vw + 10vh + 100px);
+                    height: calc(10vw + 10vh + 100px);
+                    border-radius: 20px;
+                    filter: drop-shadow(5px 5px 3px #000000);
+                    transition: all 0.5s;
+                }
+                img:hover{
+                    filter: drop-shadow(15px 15px 10px #000000);
+                }
+                p{
+                    width: 60%;
+                    //background-color: bisque;
+                    font-size: 150%;
+                    position: absolute;
+                    line-height: 60px;
+                    right: 0%;
+                    top: 10%;
+                    font-weight: 300;
+                }
+            }
+          }
+      }
+}
