@@ -1,0 +1,41 @@
+$nav_height: calc(1.3vw + 40px);
+$nav_width: calc(70vw + 100px);
+
+.PC{
+    display: none;
+}
+
+.Phone{
+    display: inherit;
+}
+
+.section1{
+    $padding: 25px;
+    margin-top: 42px;
+    .visual{
+        width: calc(80vw);
+        height: calc(75vh - $padding*2);
+        padding: $padding;
+        .bgText{
+            #float{
+                h1{
+                    color: rgb(200, 200, 200);
+                    font-size: 20rem;
+                    text-shadow: -3rem 2rem 0.5rem rgba(0, 0, 0, 0.5);
+                }
+                @keyframes FloatLoop {
+                    from {transform: translate(-45%, -24.6%);}
+                    to {transform: translate(-45%, -58%);}
+                }
+            }
+        }
+        .content{
+            width: 100%;
+            min-width: inherit;
+            h1{
+                font-size: calc(4vw + 2rem);
+                word-break: inherit;
+            }
+        }
+    }
+}
