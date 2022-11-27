@@ -154,7 +154,7 @@ body a {
     border-top: rgba(0, 0, 0, 0);
   }
   .nav.active {
-    height: 320px;
+    height: 300px;
   }
   .nav.active .navContainer {
     background-color: rgb(255, 255, 255);
