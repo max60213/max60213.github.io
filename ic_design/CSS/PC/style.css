@@ -3,6 +3,8 @@ html, body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
   overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
