@@ -1,6 +1,6 @@
 $nav_height: calc(1.3vw + 40px);
 $nav_width: calc(65vw + 180px);
-$nav_phone_height: 42px;
+$nav_phone_height: 48px;
 $nav_phone_width: calc(100vw - 26px);
 
 body{
@@ -26,7 +26,7 @@ body{
     height: $nav_height;
     max-height: 65px;
     backdrop-filter: saturate(180%) blur(20px);
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.55);
     .navContainer{
         position: relative;
         left: 50%;
@@ -121,7 +121,7 @@ body{
             background-color: rgba(255, 255, 255, 0);
             transition: background-color 0.4s ease, border-bottom 0.4s ease;
             .elements{
-                margin: 9px auto;
+                margin: 12px auto;
                 width: $nav_phone_width;
                 position: relative;
                 display: flex;
