@@ -16,7 +16,7 @@ body a {
   max-height: 65px;
   -webkit-backdrop-filter: saturate(180%) blur(20px);
           backdrop-filter: saturate(180%) blur(20px);
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .nav .navContainer {
   position: relative;
@@ -154,7 +154,7 @@ body a {
     border-top: rgba(0, 0, 0, 0);
   }
   .nav.active {
-    height: 300px;
+    height: 310px;
   }
   .nav.active .navContainer {
     background-color: rgb(255, 255, 255);
