@@ -80,8 +80,8 @@ body::-webkit-scrollbar {
   transform: rotate(25deg);
   -webkit-animation-name: FloatLoop;
           animation-name: FloatLoop;
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-delay: 0;
