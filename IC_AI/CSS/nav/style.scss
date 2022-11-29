@@ -11,6 +11,7 @@ body{
 }
 
 .material-symbols-outlined {
+    font-size: 26px;
   font-variation-settings:
   'FILL' 0,
   'wght' 300,
@@ -40,7 +41,7 @@ body{
             .hamburger{
                 display: flex;
                 flex-direction: column;
-                width: 24px;
+                width: 26px;
                 align-items: center;
                 cursor: pointer;
             }
@@ -121,7 +122,7 @@ body{
             background-color: rgba(255, 255, 255, 0);
             transition: background-color 0.4s ease, border-bottom 0.4s ease;
             .elements{
-                margin: 12px auto;
+                margin: 10px auto;
                 width: $nav_phone_width;
                 position: relative;
                 display: flex;
@@ -143,6 +144,11 @@ body{
                 .hamburger.active .bar:nth-child(2){
                     transform: translate(0px, -3.85px) rotate(-45deg);
                 }
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
             }
             .list{
                 ul{
@@ -152,7 +158,6 @@ body{
                         justify-content: inherit;
                         width: 80%;
                         border-top: rgba(0, 0, 0, 0.4) solid 1px;
-
                         opacity: 0;
                         transition: opacity 0.3s ease 0.2s;
                         a{
@@ -166,7 +171,7 @@ body{
                         }
                     }
                     :nth-child(1){
-                        border-top: rgba(0, 0, 0, 0.0);
+                        border-top: 0px;
                     }
                 }
             }
