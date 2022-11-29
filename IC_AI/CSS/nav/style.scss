@@ -138,10 +138,10 @@ body{
                     }
                 }
                 .hamburger.active .bar:nth-child(1){
-                    transform: translate(0px, 4px) rotate(45deg);
+                    transform: translate(0px, 3.85px) rotate(45deg);
                 }
                 .hamburger.active .bar:nth-child(2){
-                    transform: translate(0px, -4px) rotate(-45deg);
+                    transform: translate(0px, -3.85px) rotate(-45deg);
                 }
             }
             .list{

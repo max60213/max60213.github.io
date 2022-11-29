@@ -122,10 +122,10 @@ body a {
     transition: all 0.3s ease-in-out;
   }
   .nav .navContainer .elements .hamburger.active .bar:nth-child(1) {
-    transform: translate(0px, 4px) rotate(45deg);
+    transform: translate(0px, 3.85px) rotate(45deg);
   }
   .nav .navContainer .elements .hamburger.active .bar:nth-child(2) {
-    transform: translate(0px, -4px) rotate(-45deg);
+    transform: translate(0px, -3.85px) rotate(-45deg);
   }
   .nav .navContainer .list ul {
     display: flex;
