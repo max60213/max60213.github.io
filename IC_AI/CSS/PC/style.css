@@ -15,7 +15,10 @@ html h1, body h1 {
   font-weight: 700;
   line-height: 1.2;
 }
-html p, body p {
+html h2, body h2 {
+  font-weight: 500;
+}
+html a, html p, body a, body p {
   font-weight: 300;
 }
 
