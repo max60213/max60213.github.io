@@ -130,21 +130,18 @@ body{
                 .hamburger{
                     .bar{
                         display: block;
-                        width: 17px;
+                        width: 18px;
                         height: 1px;
-                        margin: 2.5px;
+                        margin: 3.5px;
                         background-color: black;
                         transition: all 0.3s ease-in-out;
                     }
                 }
-                .hamburger.active .bar:nth-child(2){
-                    opacity: 0;
-                }
                 .hamburger.active .bar:nth-child(1){
-                    transform: translate(0px, 6px) rotate(45deg);
+                    transform: translate(0px, 4px) rotate(45deg);
                 }
-                .hamburger.active .bar:nth-child(3){
-                    transform: translate(0px, -6px) rotate(-45deg);
+                .hamburger.active .bar:nth-child(2){
+                    transform: translate(0px, -4px) rotate(-45deg);
                 }
             }
             .list{
