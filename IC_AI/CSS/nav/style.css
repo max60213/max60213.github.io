@@ -62,7 +62,7 @@ body a {
   .elements .ICdesign {
     margin-right: 2vw;
   }
-  .elements span {
+  .elements .icon {
     display: none;
   }
   ul li {
@@ -107,8 +107,9 @@ body a {
     transition: background-color 0.4s ease, border-bottom 0.4s ease;
   }
   .nav .navContainer .elements {
-    margin: 10px auto;
+    margin: 0 auto;
     width: calc(100vw - 26px);
+    height: 100%;
     position: relative;
     display: flex;
     align-items: center;
@@ -128,10 +129,18 @@ body a {
   .nav .navContainer .elements .hamburger.active .bar:nth-child(2) {
     transform: translate(0px, -3.85px) rotate(-45deg);
   }
-  .nav .navContainer .elements a {
+  .nav .navContainer .elements .icon {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 26px;
+  }
+  .nav .navContainer .elements .icon a {
+    height: 26px;
+  }
+  .nav .navContainer .elements .icon a img {
+    width: 100%;
+    height: 100%;
   }
   .nav .navContainer .list ul {
     display: flex;
