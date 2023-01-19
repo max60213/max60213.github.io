@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  font-family: "Arial", "Noto Sans TC", sans-serif;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+html h1, body h1 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+html h2, body h2 {
+  font-weight: 500;
+}
+html a, html p, body a, body p {
+  font-weight: 300;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.Phone {
+  display: none;
+}
+
+.section1 {
+  position: relative;
+  margin-top: calc(1.3vw + 40px);
+  width: 100vw;
+  padding: 15px 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+.section1 .visual {
+  position: relative;
+  width: calc(75vw + 100px - 150px);
+  height: calc(75vh - 150px);
+  min-height: 380px;
+  border-radius: calc(2vw + 10px);
+  padding: 75px;
+  display: flex;
+  align-items: center;
+}
+.section1 .visual .bg {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: calc(2vw + 10px);
+}
+.section1 .visual .bg .bg0 {
+  background: #3a5d7a;
+}
+.section1 .visual .bg .bg1 {
+  background: radial-gradient(at bottom right, rgb(176, 106, 76) 5%, rgba(255, 255, 255, 0) 45%);
+}
+.section1 .visual .bg .bg2 {
+  background: radial-gradient(at top left, rgb(135, 178, 187) 5%, rgba(255, 255, 255, 0) 45%);
+}
+.section1 .visual .bgText {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  border-radius: calc(2vw + 10px);
+  overflow: hidden;
+}
+.section1 .visual .bgText #float {
+  transform: rotate(-25deg);
+  position: absolute;
+  right: 50%;
+}
+.section1 .visual .bgText #float h1 {
+  position: absolute;
+  z-index: 1;
+  color: rgb(215, 215, 215);
+  font-size: 30rem;
+  text-shadow: -5rem 3rem 0.8rem rgba(0, 0, 0, 0.5);
+  transform: rotate(25deg);
+  -webkit-animation-name: FloatLoop;
+          animation-name: FloatLoop;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+@-webkit-keyframes FloatLoop {
+  from {
+    transform: translate(0%, -24.6%);
+  }
+  to {
+    transform: translate(0%, -58%);
+  }
+}
+@keyframes FloatLoop {
+  from {
+    transform: translate(0%, -24.6%);
+  }
+  to {
+    transform: translate(0%, -58%);
+  }
+}
+.section1 .visual .content {
+  z-index: 0;
+  width: 50%;
+  min-width: 450px;
+}
+.section1 .visual .content h1 {
+  margin-bottom: 10px;
+  font-size: 6rem;
+  color: white;
+  word-break: keep-all;
+}
+.section1 .visual .content p {
+  color: white;
+  font-size: medium;
+  text-align: justify;
+}
+
+.section2 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.section2 .content {
+  width: 85vw;
+}
+.section2 .content h2 {
+  text-align: center;
+}
+
+._background {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}/*# sourceMappingURL=style.css.map */
