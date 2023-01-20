@@ -46,4 +46,8 @@ p {
 .section1 .visual .content h1 {
   font-size: calc(4vw + 2rem);
   word-break: inherit;
+}
+
+._background {
+  font-size: 1.6rem;
 }/*# sourceMappingURL=style.css.map */
