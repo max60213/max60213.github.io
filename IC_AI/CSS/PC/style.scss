@@ -33,6 +33,10 @@ body::-webkit-scrollbar{
     display: none;
 }
 
+p{
+    font-size: 14pt;
+}
+
 .section1{
     $padding: 75px;
     position: relative;
@@ -102,15 +106,12 @@ body::-webkit-scrollbar{
             width: 50%;
             min-width: 450px;
             h1{
-                margin-bottom: 10px;
                 font-size: 6rem;
                 color: white;
                 word-break: keep-all;
             }
             p{
                 color: white;
-                font-size: medium;
-                text-align: justify;
             }
         }
     }

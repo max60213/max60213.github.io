@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,YAAY,CAAA;EACR,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CAIf;;AAND,AAGI,YAHQ,CAGR,GAAG,CAAA;EACC,KAAK,EAAE,IAAI;CACd",
-    "sources": [
-        "starBurst.scss"
-    ],
-    "names": [],
-    "file": "starBurst.css"
-}
+{"version":3,"sources":["starBurst.scss","starBurst.css"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,YAAA;ACCJ;ADAI;EACI,WAAA;ACER","file":"starBurst.css"}

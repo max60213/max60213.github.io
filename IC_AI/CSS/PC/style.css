@@ -31,6 +31,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+p {
+  font-size: 14pt;
+}
+
 .section1 {
   position: relative;
   margin-top: calc(1.3vw + 40px);
@@ -121,15 +125,12 @@ body::-webkit-scrollbar {
   min-width: 450px;
 }
 .section1 .visual .content h1 {
-  margin-bottom: 10px;
   font-size: 6rem;
   color: white;
   word-break: keep-all;
 }
 .section1 .visual .content p {
   color: white;
-  font-size: medium;
-  text-align: justify;
 }
 
 .section2 {

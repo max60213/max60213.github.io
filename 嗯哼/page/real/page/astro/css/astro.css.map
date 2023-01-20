@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,YAAY,CAAA;EACR,gBAAgB,EAAE,kBAAkB;CACvC",
-    "sources": [
-        "astro.scss"
-    ],
-    "names": [],
-    "file": "astro.css"
-}
+{"version":3,"sources":["astro.scss","astro.css"],"names":[],"mappings":"AAAA;EACI,oCAAA;ACCJ","file":"astro.css"}

@@ -6,6 +6,10 @@
   display: inherit;
 }
 
+p {
+  font-size: 12pt;
+}
+
 .section1 {
   margin-top: 42px;
 }

@@ -3,18 +3,14 @@ body .card .container {
   background-color: #000000;
   height: 17em;
 }
-
 body .card .container img {
   position: relative;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   padding: 10%;
 }
-
 body .card #resize {
   padding: 20%;
   width: 95%;
-}
-/*# sourceMappingURL=explore.css.map */
+}/*# sourceMappingURL=explore.css.map */
