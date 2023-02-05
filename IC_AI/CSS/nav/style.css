@@ -1,5 +1,5 @@
 body a {
-  color: inherit;
+  color: black;
   text-decoration: none;
 }
 
@@ -35,6 +35,10 @@ body a {
   width: 26px;
   align-items: center;
   cursor: pointer;
+}
+.nav .navContainer .elements #logo {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 .nav .navContainer ul {
   position: relative;
