@@ -1,0 +1,21 @@
+.section{
+    background-color: aqua;
+    height: 100vh;
+    min-height: 540;
+    padding: 5rem 0;
+    .container{
+        height: 100%;
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: center;
+        .form-wrap{
+            height: 100%;
+            width: 100%;
+            max-width: 400px;
+            gap: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
