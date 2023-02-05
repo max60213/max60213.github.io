@@ -1,12 +1,9 @@
 .section {
-  background-color: aqua;
   height: 100vh;
-  min-height: 540;
-  padding: 5rem 0;
+  min-height: 540px;
 }
 .section .container {
   height: 100%;
-  background-color: antiquewhite;
   display: flex;
   justify-content: center;
 }
@@ -18,4 +15,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.section .container .form-wrap .buttons {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section .container .form-wrap .buttons .btn {
+  width: 5rem;
 }/*# sourceMappingURL=style.css.map */

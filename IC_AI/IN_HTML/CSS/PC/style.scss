@@ -1,11 +1,8 @@
 .section{
-    background-color: aqua;
     height: 100vh;
-    min-height: 540;
-    padding: 5rem 0;
+    min-height: 540px;
     .container{
         height: 100%;
-        background-color: antiquewhite;
         display: flex;
         justify-content: center;
         .form-wrap{
@@ -16,6 +13,15 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            .buttons{
+                margin-top: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .btn{
+                    width: 5rem;
+                }
+            }
         }
     }
 }
