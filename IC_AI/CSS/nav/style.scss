@@ -155,8 +155,9 @@ body{
                 ul{
                     display: flex;
                     flex-direction: column;
-                    li{
-                        justify-content: inherit;
+                    li:not(.navPC){
+                        display: flex;
+                        justify-content: left;
                         width: 80%;
                         border-top: rgba(0, 0, 0, 0.4) solid 1px;
                         opacity: 0;
@@ -165,14 +166,15 @@ body{
                             position: relative;
                             left: 0;
                             padding: 5px;
+                            padding-top: 6px;
                             margin: 5px;
                             width: 100%;
                             font-size: inherit;
                             text-align: left;
                         }
-                    }
-                    :nth-child(1){
-                        border-top: 0px;
+                        &:nth-child(2){
+                            border-top: rgba(0, 0, 0, 0);
+                        }
                     }
                 }
             }

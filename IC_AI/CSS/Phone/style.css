@@ -21,8 +21,10 @@ p {
 #index .main-visual .visual {
   width: 100%;
   margin: inherit 12px;
+  margin-top: 18px;
   height: calc(75vh - 50px);
   min-height: 380px;
+  max-height: 600px;
   padding: 25px;
 }
 #index .main-visual .visual .bgText #float h1 {
