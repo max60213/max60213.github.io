@@ -6,19 +6,26 @@
   display: inherit;
 }
 
+.section {
+  padding: 30px 0;
+}
+
 p {
   font-size: 12pt;
 }
 
-.section1 {
-  margin-top: 42px;
+.main-visual {
+  padding: 20px 15px;
 }
-.section1 .visual {
-  width: 80vw;
+
+#index .main-visual .visual {
+  width: 100%;
+  margin: inherit 12px;
   height: calc(75vh - 50px);
+  min-height: 380px;
   padding: 25px;
 }
-.section1 .visual .bgText #float h1 {
+#index .main-visual .visual .bgText #float h1 {
   color: rgb(200, 200, 200);
   font-size: 20rem;
   text-shadow: -3rem 2rem 0.5rem rgba(0, 0, 0, 0.5);
@@ -39,11 +46,11 @@ p {
     transform: translate(-45%, -58%);
   }
 }
-.section1 .visual .content {
+#index .main-visual .visual .content {
   width: 100%;
   min-width: inherit;
 }
-.section1 .visual .content h1 {
+#index .main-visual .visual .content h1 {
   font-size: calc(4vw + 2rem);
   word-break: inherit;
 }

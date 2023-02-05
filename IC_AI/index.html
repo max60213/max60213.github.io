@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,12 +22,13 @@
     <link rel="stylesheet" href="CSS/init.css">
     <!-- actual -->
     <link rel="stylesheet" href="CSS/PC/style.css">
-    <link rel="stylesheet" media="all and (max-width: 800px)" href="CSS/Phone/style.css">
+    <link rel="stylesheet" media="all and (max-width: 768px)" href="CSS/Phone/style.css">
     <link rel="stylesheet" href="CSS/nav/style.css">
 
     <title>IC_AI</title>
 </head>
-<body>
+
+<body id="index">
 
     <!-- Navigation Bar -->
     <div class="nav">
@@ -36,10 +38,9 @@
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
-                <div class="ICdesign"><a href="">
-                    <h2 class="navPC" id="logo">IC_AI</h2>
-                    <h3 class="navPhone" id="logo">IC_AI</h3>
-                </a></div>
+                <div class="ICdesign"><a href="index.html">
+                        <h3 class="navPhone" id="logo">IC_AI</h3>
+                    </a></div>
                 <div class="icon">
                     <a href="">
                         <img src="IMG/login.svg" alt="">
@@ -48,6 +49,9 @@
             </div>
             <div class="list">
                 <ul>
+                    <li class="navPC">
+                        <h2><a href="index.html" id="logo">IC_AI</a></h2>
+                    </li>
                     <li><a href="IN_HTML/introduction.html">計畫目的</a></li>
                     <li><a href="IN_HTML/news.html">最新消息</a></li>
                     <li><a href="IN_HTML/regulations.html">鑑定辦法</a></li>
@@ -60,7 +64,7 @@
     </div>
     <script src="JS/phoneNav.js"></script>
 
-    <div class="section1">
+    <div class="main-visual">
         <div class="visual">
             <div class="bg">
                 <div class="bg bg0"></div>
@@ -73,17 +77,19 @@
                 </div>
             </div>
             <div class="content">
-                <h1 class="PC">IC設計AI能力<br>鑑定網</h1>
-                <h1 class="Phone" id="title">IC設計AI能力鑑定網</h1>
+                <h1 class="PC mb-3">IC設計AI能力<br>鑑定網</h1>
+                <h1 class="Phone mb-2" id="title">IC設計AI能力鑑定網</h1>
                 <p>
                     本計畫研擬建置IC設計領域AI人才加值實作規劃，舉辦「半導體佈局設計工程師AI能力鑑定」，作為人才能力辨識與選用工具，協助企業以客觀標準衡量人才技術能力，連結企業人力資源規劃，藉此獲取優秀人才。
                 </p>
             </div>
         </div>
     </div>
-    <div class="section2">
+    <div class="container section">
         <div class="content">
-            <h2>鑑定與評審規則</h2>
+            <h2 class="text-center">
+                鑑定與評審規則
+            </h2>
         </div>
     </div>
 </body>

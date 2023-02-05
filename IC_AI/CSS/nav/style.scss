@@ -1,4 +1,4 @@
-$nav_height: calc(1.3vw + 40px);
+$nav_height: 60px;
 $nav_width: calc(65vw + 180px);
 $nav_phone_height: 48px;
 $nav_phone_width: calc(100vw - 26px);
@@ -10,33 +10,22 @@ body{
     }
 }
 
-.material-symbols-outlined {
-    font-size: 26px;
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 300,
-  'GRAD' 0,
-  'opsz' 48
-}
-
 .nav{
     z-index: 100;
     position: fixed;
     top: 0;
     width: 100vw;
     height: $nav_height;
-    max-height: 65px;
+    display: flex;
+    justify-content: center;
     backdrop-filter: saturate(180%) blur(20px);
     background-color: rgba(255, 255, 255, 0.58);
     .navContainer{
-        position: relative;
-        left: 50%;
-        transform: translate(-50%);
         height: 100%;
         width: 100vw;
+        max-width: 1200px;
         display: flex;
         align-items: center;
-        justify-content: center;
         .elements{
             .hamburger{
                 display: flex;
@@ -45,70 +34,63 @@ body{
                 align-items: center;
                 cursor: pointer;
             }
-            #logo{
-                font-size: 1.5rem;
-                font-weight: 600;
-            }
         }
-        ul{
-            position: relative;
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-            display: flex;
-            align-items: center;
-            li{
+        .list{
+            width: 100%;
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
                 display: flex;
+                width: 100%;
                 align-items: center;
-                justify-content: center;
-                width: calc($nav_width / 7);
-                text-align: center;
+                justify-content: space-around;
+                li{
+                    text-align: center;
+                    h2 > a{
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        margin: 0;
+                    }
+                }
             }
         }
     }
 }
 
-@media all and (min-width: 701px) {
+@media all and (min-width: 769px) {
     .navPhone{
         display: none;
     }
     .elements{
-        .hamburger{
-            display: none;
-        }
-        .ICdesign{
-            margin-right: 2vw;
-        }
-        .icon{
-            display: none;
-        }
+        display: none;
     }
     ul{
         li{
-            font-size: calc(0.5vw + 12px);
-        }
-        a{
-            position: relative;
-        }
-        a::after{
-            content:"";
-            display:flex;
-            width: 0;
-            height: 1px;
-            background-color: hsla(0, 0%, 0%, 0.5);
-            position: absolute;
-            bottom: -1px;
-            right: 0;
-            transition: 0.3s;
-        }
-        a:hover::after{
-            width: 100%;
-            left: 0;
+            font-size: 1.2rem;
+            a{
+                position: relative;
+            }
+            a::after {
+                content:"";
+                display:flex;
+                width: 0;
+                height: 1px;
+                background-color: hsla(0, 0%, 0%, 0.5);
+                position: absolute;
+                bottom: -1px;
+                right: 0;
+                transition: 0.3s;
+            }
+            a:not(#logo):hover::after{
+                width: 100%;
+                left: 0;
+            }
         }
     }
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 768px) {
     .navPC{
         display: none;
     }
@@ -148,6 +130,12 @@ body{
                 }
                 .hamburger.active .bar:nth-child(2){
                     transform: translate(0px, -3.85px) rotate(-45deg);
+                }
+                .ICdesign{
+                    #logo{
+                        margin: 0;
+                        font-weight: 600;
+                    }
                 }
                 .icon{
                     display: flex;
