@@ -1,34 +1,33 @@
 <link rel="stylesheet" href="../CSS/nav/style.css">
 
 <div class="nav">
-    <div class="navContainer">
-        <div class="elements">
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <div class="ICdesign"><a href="../index.html">
-                    <h3 class="navPhone" id="logo">IC_AI</h3>
-                </a></div>
-            <div class="icon">
-                <a href="">
-                    <img src="../IMG/login.svg" alt="">
-                </a>
-            </div>
-        </div>
-        <div class="list">
-            <ul>
-                <li class="navPC">
-                    <h2><a href="../index.html" id="logo">IC_AI</a></h2>
-                </li>
-                <li><a href="introduction.html">計畫目的</a></li>
-                <li><a href="news.html">最新消息</a></li>
-                <li><a href="regulations.html">鑑定辦法</a></li>
-                <li><a href="registration.html">報名專區</a></li>
-                <li><a href="reviewer.html">評審專區</a></li>
-                <li><a href="contact_us.html">聯絡我們</a></li>
-            </ul>
-        </div>
+    <div class="phone navHover navMenu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <div class="navHover navLogo">
+        <a href="../index.html">IC_AI</a>
+    </div>
+    <div class="navItems">
+        <ul>
+            <li class="navHover"><a href="introduction.html">計劃目的</a></li>
+            <li class="navHover"><a href="news">最新消息</a></li>
+            <li class="navHover"><a href="regulations.html">鑑定辦法</a></li>
+            <li class="navHover"><a href="registration.html">報名專區</a></li>
+            <li class="navHover"><a href="reviewer.html">評審專區</a></li>
+            <li class="navHover"><a href="contact_us.html">聯絡我們</a></li>
+        </ul>
+    </div>
+    <div class="navHover navRight">
+        <a href="login.html"><img src="../IMG/login.svg" alt=""></a>
     </div>
 </div>
-<script src="../JS/phoneNav.js"></script>
+<script>
+    const hamburger = document.querySelector(".navMenu");
+    const list = document.querySelector(".navItems");
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        list.classList.toggle("active");
+    })
+</script>

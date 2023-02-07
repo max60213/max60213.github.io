@@ -1,199 +1,144 @@
 $nav_height: 60px;
-$nav_width: calc(65vw + 180px);
-$nav_phone_height: 48px;
-$nav_phone_width: calc(100vw - 26px);
+$nav_phone_height: 44px;
 
-body{
-    a{
-        color: black;
-        text-decoration: none;
-    }
+.navHover{
+    opacity: 0.7;
+    transition: 0.4s ease;
 }
 
-.nav{
-    z-index: 100;
+.navHover:hover{
+    opacity: 1;
+}
+
+.nav {
     position: fixed;
-    top: 0;
     width: 100vw;
     height: $nav_height;
+    padding: 0 20px;
     display: flex;
-    justify-content: center;
-    backdrop-filter: saturate(180%) blur(20px);
-    background-color: rgba(255, 255, 255, 0.58);
-    .navContainer{
-        height: 100%;
-        width: 100vw;
-        max-width: 1200px;
-        display: flex;
-        align-items: center;
-        .elements{
-            .hamburger{
-                display: flex;
-                flex-direction: column;
-                width: 26px;
-                align-items: center;
-                cursor: pointer;
-            }
-        }
-        .list{
-            width: 100%;
-            ul{
-                margin: 0;
-                padding: 0;
-                list-style-type: none;
-                display: flex;
-                width: 100%;
-                align-items: center;
-                justify-content: space-around;
-                li{
-                    text-align: center;
-                    h2 > a{
-                        font-size: 1.5rem;
-                        font-weight: 600;
-                        margin: 0;
-                    }
-                }
-            }
-        }
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    .navLogo > a {
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+    .navItems {
+        backdrop-filter: saturate(180%) blur(20px);
+        background-color: rgba(255, 255, 255, 0.7);
+        z-index: -1;
     }
 }
 
 @media all and (min-width: 769px) {
-    .navPhone{
+    .phone {
         display: none;
     }
-    .elements{
-        display: none;
+    ul {
+        width: 100%;
+        transform: translateY(0.1rem);
+        max-width: 680px;
+        display: flex;
+        justify-content: space-around;
+        li {
+            font-size: min(2.2vw, 1.2rem);
+        }
     }
-    ul{
-        li{
-            font-size: 1.2rem;
-            a{
-                position: relative;
-            }
-            a::after {
-                content:"";
-                display:flex;
-                width: 0;
-                height: 1px;
-                background-color: hsla(0, 0%, 0%, 0.5);
-                position: absolute;
-                bottom: -1px;
-                right: 0;
-                transition: 0.3s;
-            }
-            a:not(#logo):hover::after{
-                width: 100%;
-                left: 0;
-            }
+    .navItems {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        padding: 0 100px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navRight {
+        height: 100%;
+        img {
+            height: 100%;
+            padding: 15px;
+            padding-right: 0;
+            margin-right: -3px;
         }
     }
 }
 
 @media all and (max-width: 768px) {
-    .navPC{
-        display: none;
-    }
-    .nav{
+    .nav {
         height: $nav_phone_height;
-        max-height: inherit;
-        transition: height 0.8s cubic-bezier(.5,0,.5,1);
-        overflow: hidden;
-        .navContainer{
-            display: block;
+        padding: 0 4px;
+        .navMenu {
+            display: flex;
+            flex-direction: column;
+            transform: inherit;
+            justify-content: space-around;
+            height: 100%;
+            padding: 11px;
+            z-index: 1;
+            .bar {
+                width: 20px;
+                height: 1.5px;
+                background-color: black;
+                transition: all 0.5s ease;
+            }
+        }
+        .navMenu:hover {
+            cursor: pointer;
+        }
+        .navMenu.active{
+            .bar:nth-child(1){
+                transform: translateY(5.4px) rotate(45deg);
+            }
+            .bar:nth-child(2){
+                transform: translateY(-5.4px) rotate(-45deg);
+            }
+        }
+        .navItems {
+            height: 0;
+            overflow: hidden;
             position: absolute;
             top: 0;
-            height: $nav_phone_height;
-            border-bottom: rgba(0, 0, 0, 0) solid 1px;
-            background-color: rgba(255, 255, 255, 0);
-            transition: background-color 0.4s ease, border-bottom 0.4s ease;
-            .elements{
-                margin: 0 auto;
-                width: $nav_phone_width;
-                height: 100%;
-                position: relative;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                .hamburger{
-                    .bar{
-                        display: block;
-                        width: 18px;
-                        height: 1px;
-                        margin: 3.5px;
-                        background-color: black;
-                        transition: all 0.3s ease-in-out;
-                    }
-                }
-                .hamburger.active .bar:nth-child(1){
-                    transform: translate(0px, 3.85px) rotate(45deg);
-                }
-                .hamburger.active .bar:nth-child(2){
-                    transform: translate(0px, -3.85px) rotate(-45deg);
-                }
-                .ICdesign{
-                    #logo{
-                        margin: 0;
-                        font-weight: 600;
-                    }
-                }
-                .icon{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 26px;
-                    a{
-                        height: 26px;
-                        img{
-                            width: 100%;
-                            height: 100%;
-                        }
-                    }
-                }
-            }
-            .list{
-                ul{
-                    display: flex;
-                    flex-direction: column;
-                    li:not(.navPC){
-                        display: flex;
-                        justify-content: left;
-                        width: 80%;
-                        border-top: rgba(0, 0, 0, 0.4) solid 1px;
-                        opacity: 0;
-                        transition: opacity 0.3s ease 0.2s;
-                        a{
-                            position: relative;
-                            left: 0;
-                            padding: 5px;
-                            padding-top: 6px;
-                            margin: 5px;
-                            width: 100%;
-                            font-size: inherit;
-                            text-align: left;
-                        }
-                        &:nth-child(2){
-                            border-top: rgba(0, 0, 0, 0);
-                        }
+            left: 0;
+            width: 100%;
+            padding-top: $nav_phone_height;
+            transition: height 0.8s cubic-bezier(.5, 0, .5, 1), border-top 0.5s ease;
+            ul{
+                opacity: 0;
+                padding: 0 10vw;
+                border-top: 1px solid hsla(0, 0%, 0%, 0.5);
+                transition: opacity 0.3s ease 0.2s;
+                li {
+                    border-top: 1px solid hsla(0, 0%, 0%, 0.3);
+                    padding: 8px;
+                    &:nth-child(1) {
+                        border-top: 2px solid transparent;
                     }
                 }
             }
         }
-    }
-    .nav.active{
-        height: 100vh;
-        .navContainer{
-            background-color: rgba(255, 255, 255, 1);
-            border-bottom: rgba(0, 0, 0, 0.4) solid 1px;
-            .list{
-                ul{
-                    display: flex;
-                    flex-direction: column;
-                    opacity: 1;
-                    li{
-                        opacity: 1;
-                    }
-                }
+
+        .navItems.active {
+            height: max(100vh, 300px);
+            ul {
+                opacity: 1;
+            }
+        }
+
+        .navLogo {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .navRight {
+            height: 100%;
+            img {
+                height: 100%;
+                padding: 8px;
+                padding-right: 6px;
             }
         }
     }

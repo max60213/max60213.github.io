@@ -9,7 +9,7 @@
     <!-- Google Fonts: Noto Sans TC -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- Bootstrap 5.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -33,37 +33,36 @@
 
     <!-- Navigation Bar -->
     <div class="nav">
-        <div class="navContainer">
-            <div class="elements">
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-                <div class="ICdesign"><a href="index.html">
-                        <h3 class="navPhone" id="logo">IC_AI</h3>
-                    </a></div>
-                <div class="icon">
-                    <a href="">
-                        <img src="IMG/login.svg" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="list">
-                <ul>
-                    <li class="navPC">
-                        <h2><a href="index.html" id="logo">IC_AI</a></h2>
-                    </li>
-                    <li><a href="IN_HTML/introduction.html">計畫目的</a></li>
-                    <li><a href="IN_HTML/news.html">最新消息</a></li>
-                    <li><a href="IN_HTML/regulations.html">鑑定辦法</a></li>
-                    <li><a href="IN_HTML/registration.html">報名專區</a></li>
-                    <li><a href="IN_HTML/reviewer.html">評審專區</a></li>
-                    <li><a href="IN_HTML/contact_us.html">聯絡我們</a></li>
-                </ul>
-            </div>
+        <div class="phone navHover navMenu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="navHover navLogo">
+            <a href="#">IC_AI</a>
+        </div>
+        <div class="navItems">
+            <ul>
+                <li class="navHover"><a href="IN_HTML/introduction.html">計劃目的</a></li>
+                <li class="navHover"><a href="IN_HTML/news.html">最新消息</a></li>
+                <li class="navHover"><a href="IN_HTML/regulations.html">鑑定辦法</a></li>
+                <li class="navHover"><a href="IN_HTML/registration.html">報名專區</a></li>
+                <li class="navHover"><a href="IN_HTML/reviewer.html">評審專區</a></li>
+                <li class="navHover"><a href="IN_HTML/contact_us.html">聯絡我們</a></li>
+            </ul>
+        </div>
+        <div class="navHover navRight">
+            <a href="IN_HTML/login.html"><img src="IMG/login.svg" alt=""></a>
         </div>
     </div>
-    <script src="JS/phoneNav.js"></script>
+    <script>
+        const hamburger = document.querySelector(".navMenu");
+        const list = document.querySelector(".navItems");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            list.classList.toggle("active");
+        })
+    </script>
 
     <div class="main-visual">
         <div class="visual">
